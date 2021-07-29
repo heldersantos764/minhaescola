@@ -1,0 +1,27 @@
+{
+    "name": "helder/minhaescola",
+    "description": "Sistema de Gerenciamento de escolas - Minha Escola",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "heldersantos764",
+            "email": "heldersantos764@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.3||^8.0",
+        "league/plates": "3.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\" : "app/",
+            "Core\\": "core/"
+        },
+        "files": [
+            "app/Config/App.php",
+            "core/Helpers/Url.php"
+        ]
+    }
+}
