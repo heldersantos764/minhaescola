@@ -12,16 +12,13 @@
     "minimum-stability": "stable",
     "require": {
         "php": "^7.3||^8.0",
-        "league/plates": "3.*"
+        "league/plates": "3.*",
+        "vlucas/phpdotenv": "^5.3"
     },
     "autoload": {
         "psr-4": {
             "App\\" : "app/",
             "Core\\": "core/"
-        },
-        "files": [
-            "app/Config/App.php",
-            "core/Helpers/Url.php"
-        ]
+        }
     }
 }

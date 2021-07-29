@@ -10,7 +10,7 @@ class Request{
 
     public function __construct()
     {
-        $this->uri = $_SERVER['PATH_INFO'];
+        $this->uri = $_SERVER['PATH_INFO'] ?? $_SERVER['REQUEST_URI'];
         $this->method = $_SERVER['REQUEST_METHOD'];
         $this->post = filter_input_array(INPUT_POST, FILTER_SANITIZE_SPECIAL_CHARS) ?? [];
         $this->queryParams = filter_input_array(INPUT_GET, FILTER_SANITIZE_SPECIAL_CHARS) ?? [];

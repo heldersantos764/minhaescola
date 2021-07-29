@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="<?= baseUrl('/assets/estilo.css') ?>">
 
-    <title><?= APP_TITLE ?></title>
+    <title><?= $_ENV['APP_TITLE'] ?></title>
 </head>
 
 <body>
