@@ -7,6 +7,7 @@ class Request{
     private $queryParams = [];
     private $post = [];  
     private $method;
+    private $nome;
 
     public function __construct()
     {
@@ -38,5 +39,9 @@ class Request{
 
     public function getQueryVar(string $key): ?string{
         return $this->queryParams[$key] ?? null;
+    }
+
+    public function addName($nome){
+        $this->nome = $nome;
     }
 }
